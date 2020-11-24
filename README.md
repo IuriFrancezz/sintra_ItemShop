@@ -49,7 +49,7 @@ function OpenBuyItemMenu()
 			  local mname = data.current.value
 			  local mprice = data.current.price
 
-              TriggerServerEvent('esx_tequila:Item', mname, mprice)
+              TriggerServerEvent('sintra_itemShop:Item', mname, mprice)
 
       end,
       function(data, menu)
