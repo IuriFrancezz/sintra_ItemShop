@@ -99,6 +99,14 @@ end)
 
 
 
+# Dependencies #
+- [ESX FrameWork - Dowmload](https://github.com/esx-framework)
+
+
+
+# Fivem Portugal Configuration #
+- [Official Discord Of Fivem Portuguese Help](https://discord.gg/cCc7RG6xKr)
+
 
 
 # Author #
