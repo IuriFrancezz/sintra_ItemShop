@@ -80,6 +80,7 @@ elseif data.current.value == 'buy_Item' then
 
 ## SERVER SIDE ##
 > 9º Step: Go to your Job and open server/main.lua 
+
 > 10º Step: Insert into your code, bellow the putStockItems (you can search by that) you paste it:
 ```
 RegisterServerEvent('sintra_itemShop:Item')
@@ -101,4 +102,5 @@ end)
 
 
 # Author #
-- [Iuri Rodrigues](discord.gg/PgEe8Yg)
+- [Iuri Rodrigues](IuriFrancezz)
+- [> Discord <](https://discord.gg/PgEe8Yg)
