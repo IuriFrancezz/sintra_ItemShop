@@ -46,10 +46,10 @@ function OpenBuyItemMenu()
         elements = elements,
       },
       function(data, menu)
-			  local mname = data.current.value
-			  local mprice = data.current.price
+			  local itemname = data.current.value
+			  local itemprice = data.current.price
 
-              TriggerServerEvent('sintra_itemShop:Item', mname, mprice)
+              TriggerServerEvent('sintra_itemShop:Item', itemname, itemprice)
 
       end,
       function(data, menu)
@@ -84,13 +84,13 @@ elseif data.current.value == 'buy_Item' then
 > 10º Step: Insert into your code, bellow the putStockItems (you can search by that) you paste it:
 ```
 RegisterServerEvent('sintra_itemShop:Item')
-AddEventHandler('sintra_itemShop:Item', function(mname, mprice)
+AddEventHandler('sintra_itemShop:Item', function(itemname, itemprice)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
 
-	if xPlayer.getMoney() >= mprice then
-		xPlayer.removeMoney(mprice)
-		xPlayer.addInventoryItem(mname, 1)
+	if xPlayer.getMoney() >= itemprice then
+		xPlayer.removeMoney(itemprice)
+		xPlayer.addInventoryItem(itemname, 1)
 	else
 		TriggerClientEvent('esx:showNotification', xPlayer.source, "Você não tem dinheiro suficiente")	
 	end
