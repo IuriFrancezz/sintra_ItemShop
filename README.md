@@ -2,28 +2,25 @@
 FiveM - Simple Shop for gangs / Police / Ambulance to buy Items
 
 
-Language: English [ENG]
+# Language: English [ENG] #
 
-# CONFIG #
+## CONFIG ##
 1º Step: Go to your Job and open config.lua
 2º Step: Insert into your code, above the authorizedWeapons
 Yes, you can add more, you only need copy the line 11 and paste bellow adding an "," above of the code (at the end)
 
-*Config.AuthorizedMoldes = {
+Config.AuthorizedMoldes = {
 	{ name = 'item_id',     price = 2500, label = 'What you want to see on menu' }
-}*
+}
+
+###   CONFIG READY !   ###
 
 
+## CLIENT SIDE ##
+> 3º Step: Go to your Job and open client/main.lua 
+> 4º Step: Insert into your code, bellow the skin changer code that:
 
-
-#   CONFIG READY !   #
-
-
-# CLIENT SIDE #
-3º Step: Go to your Job and open client/main.lua
-4º Step: Insert into your code, bellow the skin changer code that:
-
-```function OpenBuyItemMenu()
+( function OpenBuyItemMenu()
 
 
     local elements = {}
@@ -54,7 +51,7 @@ Yes, you can add more, you only need copy the line 11 and paste bellow adding an
         menu.close()
       end
     )
-end```
+end )
 
 5º Step: Search by "OpenArmoryMenu" (print: https://prnt.sc/vpfeah)
 6º Step: Insert above the "end" function that:
@@ -67,15 +64,14 @@ table.insert(elements, {label = 'Comprar Equipamentos', value = 'buy_Item'})
 `elseif data.current.value == 'buy_Item' then
 	OpenBuyItemMenu()`
 
-######################
-# CLIENT SIDE READY! #
-######################
+### CLIENT SIDE READY! ###
 
-# SERVER SIDE #
+
+## SERVER SIDE ##
 9º Step: Go to your Job and open server/main.lua
 10º Step: Insert into your code, bellow the putStockItems (you can search by that) you paste it:
 
-`RegisterServerEvent('sintra_itemShop:Item')
+RegisterServerEvent('sintra_itemShop:Item')
 AddEventHandler('sintra_itemShop:Item', function(mname, mprice)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
@@ -86,10 +82,11 @@ AddEventHandler('sintra_itemShop:Item', function(mname, mprice)
 	else
 		TriggerClientEvent('esx:showNotification', xPlayer.source, "Você não tem dinheiro suficiente")	
 	end
-end)`
+end)
 
-######################
-# SERVER SIDE READY! #
-######################
 
-# YOU CAN NOW START BUYING ITEMS IN ARMORIES MENU :) #
+### SERVER SIDE READY! ###
+
+
+# Author #
+- [Iuri Rodrigues](discord.gg/PgEe8Yg)
