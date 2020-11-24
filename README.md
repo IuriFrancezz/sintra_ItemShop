@@ -7,22 +7,23 @@ Language: English [ENG]
 # CONFIG #
 1º Step: Go to your Job and open config.lua
 2º Step: Insert into your code, above the authorizedWeapons
+Yes, you can add more, you only need copy the line 11 and paste bellow adding an "," above of the code (at the end)
 
-`Config.AuthorizedMoldes = {
+*Config.AuthorizedMoldes = {
 	{ name = 'item_id',     price = 2500, label = 'What you want to see on menu' }
-}`
+}*
 
-# Yes, you can add more, you only need copy the line 11 and paste bellow adding an "," above of the code (at the end)
 
-######################
+
+
 #   CONFIG READY !   #
-######################
+
 
 # CLIENT SIDE #
 3º Step: Go to your Job and open client/main.lua
 4º Step: Insert into your code, bellow the skin changer code that:
 
-`function OpenBuyItemMenu()
+```function OpenBuyItemMenu()
 
 
     local elements = {}
@@ -53,7 +54,7 @@ Language: English [ENG]
         menu.close()
       end
     )
-end`
+end```
 
 5º Step: Search by "OpenArmoryMenu" (print: https://prnt.sc/vpfeah)
 6º Step: Insert above the "end" function that:
