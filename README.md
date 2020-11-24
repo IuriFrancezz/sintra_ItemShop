@@ -6,8 +6,10 @@
 
 ## CONFIG ##
 > 1º Step: Go to your Job and open config.lua 
+
 > 2º Step: Insert into your code, above the authorizedWeapons 
-Yes, you can add more, you only need copy the line 11 and paste bellow adding an "," above of the code (at the end)
+
+> Yes, you can add more, you only need copy the line 11 and paste bellow adding an "," above of the code (at the end)
 
 ```
 Config.AuthorizedMoldes = {
@@ -15,11 +17,11 @@ Config.AuthorizedMoldes = {
 }
 ```
 
-###   CONFIG READY !   ###
 
 
 ## CLIENT SIDE ##
 > 3º Step: Go to your Job and open client/main.lua 
+
 > 4º Step: Insert into your code, bellow the skin changer code that:
 
 ```
@@ -57,7 +59,8 @@ function OpenBuyItemMenu()
 end
 ```
 
-> 5º Step: Search by "OpenArmoryMenu" (print: https://prnt.sc/vpfeah)
+> 5º Step: Search by "OpenArmoryMenu" [ShowCase](https://prnt.sc/vpfeah)
+
 > 6º Step: Insert above the "end" function that:
 
 ```
@@ -65,12 +68,14 @@ table.insert(elements, {label = 'Comprar Equipamentos', value = 'buy_Item'})
 ```
 
 > 7º Step: Scrooling Down you can see 1 IF functions and somes elseif
+
 > 8º Step: Insert into your elseifs functions that: (you can add the function where you want, exceptionally above the IF)
 
-`elseif data.current.value == 'buy_Item' then
+```
+elseif data.current.value == 'buy_Item' then
 	OpenBuyItemMenu()`
+```
 
-### CLIENT SIDE READY! ###
 
 
 ## SERVER SIDE ##
@@ -91,7 +96,8 @@ AddEventHandler('sintra_itemShop:Item', function(mname, mprice)
 end)
 ```
 
-### SERVER SIDE READY! ###
+
+
 
 
 # Author #
