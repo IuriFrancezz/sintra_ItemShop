@@ -12,7 +12,7 @@
 > Yes, you can add more, you only need copy the line 11 and paste bellow adding an "," above of the code (at the end)
 
 ```
-Config.AuthorizedMoldes = {
+Config.AuthorizedItems = {
 	{ name = 'item_id',     price = 2500, label = 'What you want to see on menu' }
 }
 ```
