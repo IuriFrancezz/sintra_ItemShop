@@ -100,7 +100,7 @@ end)
 
 
 # Dependencies #
-- [ESX FrameWork - Dowmload](https://github.com/esx-framework)
+- [ESX FrameWork - Download](https://github.com/esx-framework)
 
 
 
